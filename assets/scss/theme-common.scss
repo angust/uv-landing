@@ -1,0 +1,282 @@
+@import url("https://use.typekit.net/plj0wts.css");
+
+html {
+  scroll-behavior: smooth;
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.25rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: #efefef;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+:root {
+  --vc-heading-font: new-order, sans-serif;
+  //--vc-heading-font: adobe-garamond-pro, serif;
+  --vc-body-font: proxima-nova, sans-serif;
+  --vc-body-font-weight: 300;
+  --vc-line-height: 1.7;
+  --vc-heading-line-height: 1.25;
+  --vc-heading-letter-spacing:0.01em;
+  --vc-heading-font-weight: 500;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--vc-heading-font);
+  font-weight: var(--vc-heading-font-weight);
+  line-height: var(--vc-heading-line-height);
+  letter-spacing: var(--vc-heading-letter-spacing);
+}
+
+*, *:before, *:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --dark-background-color: #010032; //#10172f;
+  --dark-text-color: rgba(255, 255, 255, 0.65);
+  --dark-text-heading-color: #fff;
+/*   --sipsta-orange: #f15f24;
+  --sipsta-light-grey: #f6f7f8; */
+
+  //animation variables
+  --animate-duration: 0.75s;
+  --animate-delay: 1.25s;
+  --animate-repeat: 1;
+}
+::selection {
+  background: #000;
+  color: #fff;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #000;
+  color: #fff;
+
+  /* Gecko Browsers */
+}
+
+/*
+ * Globals
+ */
+body {
+  color: #000;
+  font-family: var(--vc-body-font);
+  font-size: 17px;
+  font-weight: var(--vc-body-font-weight);
+  line-height: 1.8;
+}
+
+a {
+  color: #72767b;
+  text-decoration: none;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2.7em;
+}
+
+h2 {
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+p,
+pre,
+ul,
+ol {
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 35px;
+  list-style: initial;
+}
+
+ol {
+  padding-left: 35px;
+  list-style: decimal;
+}
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* General */
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.container {
+  margin: auto;
+
+  width: 100%;
+}
+
+@include media-breakpoint-up(sm) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .container {
+    max-width: 1240px;
+  }
+}
+.row {
+  margin: 0em 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* das reboots */
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: 0 !important;
+}
+
+hr {
+  box-sizing: content-box; // 1
+  height: 0; // 1
+  overflow: visible; // 2
+}
+a {
+  cursor: pointer;
+}
+a:not([href]):not([class]) {
+  color: inherit;
+  text-decoration: none;
+
+  @include hover() {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+img {
+  vertical-align: middle;
+  border-style: none; // Remove the border on images inside links in IE 10-.
+}
+
+svg {
+  // Workaround for the SVG overflow bug in IE10/11 is still required.
+  // See https://github.com/twbs/bootstrap/issues/26878
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.content-container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1380px;
+}
+
+.v-padding-lg {
+  padding: 4em 0em;
+}
+
+:root {
+  --am-copper: #bd6418;
+}
+
+
+.wysiwyg-content p {
+  opacity: .8;
+}
+
+.content-page{
+  padding:3em 0em;
+}
+
+html, body{
+  background:var(--dark-background-color);
+  color: var(--dark-text-color);
+}

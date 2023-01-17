@@ -1,0 +1,11 @@
+//ONLY define variables or mixins here, this is a component that gets accesed by EVERY component
+//Adding regular css or sass here is a poor life choice which will lead to selectors appearing for each time a component is used
+//For global scss add it to the nuxt.config.js
+$container-max-widths: (
+  md: 750px,
+  lg: 960px,
+  xl: 1280px
+);
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/_mixins.scss";
