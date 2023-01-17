@@ -259,7 +259,7 @@
     //addresses edge case for any links that could be used inside the description text area over the top of a full banner link
     font-size: var(--main-banner-description-font-size);
     line-height: var(  --main-banner-description-line-height);
-    ::v-deep a {
+    :deep a {
       color: var(--main-banner-content-text-color);
       z-index: var(--banner-content-link-z-index);
       text-decoration: underline;
@@ -279,8 +279,8 @@
   .banner-actions {
     gap: 1em;
     display: flex;
-    ::v-deep a,
-    ::v-deep .highlight-link {
+    :deep a,
+    :deep .highlight-link {
       z-index: var(--banner-content-link-z-index);
       position: relative;
       pointer-events: all;

@@ -109,7 +109,7 @@ export default {
 .content-card {
   .image-container {
 
-    ::v-deep .object-contain {
+    :deep .object-contain {
         padding:1.5em;
     }
     .title-region {
@@ -130,7 +130,7 @@ export default {
  .content-card {
   display:grid;
   gap:1em;
-  ::v-deep .banner-display{
+  :deep .banner-display{
   --main-banner-content-text-color: black;
   --banner-content-inner-padding: 0;
   --main-banner-title: 1.25em;

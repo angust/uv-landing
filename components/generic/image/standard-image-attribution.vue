@@ -256,7 +256,7 @@ export default {
 }
 
 //overlay image attribution
-::v-deep .image-attribution-overlay {
+:deep .image-attribution-overlay {
   color: var(--image-overlay-text-color);
   position: absolute;
   bottom: 0;

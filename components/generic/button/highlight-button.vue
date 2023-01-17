@@ -214,7 +214,7 @@ export default {
 }
 
 .highlight-link {
-  ::v-deep .icon {
+  :deep .icon {
     width: 1em;
     height: 1em;
     display: flex;
@@ -295,13 +295,13 @@ export default {
       transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
     }
   }
-  ::v-deep .icon {
+  :deep .icon {
     --vc-highlight-action-icon-color: var(--vc-link-color);
   }
 
   @include hover-focus {
     color: var(--vc-link-hover-color);
-    ::v-deep .icon {
+    :deep .icon {
       --vc-highlight-action-icon-color: var(--vc-link-color);
     }
   }
@@ -341,7 +341,7 @@ export default {
     border: 2px solid;
     border-color: var(--vc-highlight-action-background-color);
 
-    ::v-deep .icon {
+    :deep .icon {
       --vc-highlight-action-icon-color: var(--vc-highlight-action-text-color);
     }
 
@@ -358,7 +358,7 @@ export default {
     color: var(--vc-highlight-action-outline-text-color);
     border: 2px solid;
     border-color: var(--vc-highlight-action-outline-color);
-    ::v-deep .icon {
+    :deep .icon {
       --vc-highlight-action-icon-color: var(
         --vc-highlight-action-outline-text-color
       );
@@ -367,7 +367,7 @@ export default {
       background: var(--vc-highlight-action-outline-hover-color);
       border-color: var(--vc-highlight-action-outline-hover-color);
       color: var(--vc-highlight-action-outline-hover-text-color);
-      ::v-deep .icon {
+      :deep .icon {
         --vc-highlight-action-icon-color: var(
           --vc-highlight-action-outline-hover-text-color
         );
