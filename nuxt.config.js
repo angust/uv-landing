@@ -30,7 +30,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/style-resources' //for globally defined style resources
+    '@nuxtjs/style-resources',
   ],
   styleResources: {
     scss: [
